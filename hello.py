@@ -1,6 +1,7 @@
 from flask import Flask
 
 app = Flask(__name__)
+app.debug = True
 
 @app.route('/')
 def hello_world():
@@ -8,4 +9,4 @@ def hello_world():
 
 @app.route('/about')
 def about():
-    return 'About me...'   
+    return 'About me...'
