@@ -7,7 +7,7 @@ def create_app():
     '''Create and configure an instance of the Flask application'''
 
     app = Flask(__name__)
-    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///C:\\Users\\bruno\\Desktop\\DSPT6-Twitoff\\twitoff\\twitoff.sqlite"
+    app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///C:\\Users\\Rokshana_Parul\\Desktop\\ROKSHANA\\Data_Engineering\\Class_Lecture_Unit3_SC3\\DS-Unit-3-Sprint-3-Productization-and-Cloud-master\\twitoff.sqlite"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     db.init_app(app)
 
