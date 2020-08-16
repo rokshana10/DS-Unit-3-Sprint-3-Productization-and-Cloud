@@ -45,5 +45,6 @@ def create_app():
             )
 
         return render_template('prediction.html', title='Prediction', message=message)
-
+    @app.route('/update')
+    
     return app
