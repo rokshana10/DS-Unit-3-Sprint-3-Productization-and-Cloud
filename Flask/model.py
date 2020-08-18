@@ -42,4 +42,5 @@ def parse_records(database_records):
         print(record)
         parsed_record = record.__dict__
         del parsed_record["_sa_instance_state"]
-        parsed_records.append(
+        parsed_records.append(parsed_record)
+    return parsed_records 
